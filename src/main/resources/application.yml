@@ -1,0 +1,9 @@
+
+spring:
+  cache:
+    cache-names:
+    - cache1
+    caffeine: # https://static.javadoc.io/com.github.ben-manes.caffeine/caffeine/2.2.2/com/github/benmanes/caffeine/cache/CaffeineSpec.html
+      spec: maximumSize=500,expireAfterWrite=60s
+     
+#debug: true
